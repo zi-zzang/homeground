@@ -1,0 +1,277 @@
+section {
+  margin: 0 auto;
+  width: 1400px;
+  margin-top: 88px;
+  font-size: 30px;
+}
+section button {
+  background-color: #000;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+section button:active {
+  background-color: rgb(60, 54, 54);
+  color: #fff;
+}
+section .order_info {
+  /* height: 300px; */
+  width: 100%;
+}
+.order_info input {
+  margin-left: 50px;
+}
+section h2 {
+  margin-bottom: 26px;
+  border-bottom: 3px solid #707070;
+}
+
+section input {
+  height: 35px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+section > div label {
+  width: 150px;
+  display: inline-block;
+}
+section select {
+  margin-left: 50px;
+  width: 200px;
+  height: 35px;
+  display: inline-block;
+  font-size: 20px;
+}
+.order_info form .o_name input {
+  width: 1187px;
+}
+.order_info form .o_phone input {
+  width: 200px;
+  margin-left: 286px;
+}
+.order_info form .o_email input {
+  width: 540px;
+}
+.order_info form .o_email span {
+  padding: 0 39px;
+}
+.order_info form .o_email select {
+  width: 540px;
+  margin: 0;
+}
+.order_place {
+  padding-top: 100px;
+}
+.order_place form div label {
+  width: 150px;
+  display: inline-block;
+}
+.order_place form div input {
+  width: 1187px;
+  height: 35px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-left: 50px;
+}
+.order_place form div.p_phone input {
+  width: 200px;
+  margin-left: 286px;
+}
+.order_place form div.p_zip #o_zip {
+  width: 100px;
+}
+.order_place form div.p_zip button {
+  width: 102px;
+  height: 35px;
+  font-size: 20px;
+}
+.order_place form .p_memo input {
+  height: 100px;
+  margin-top: 10px;
+}
+.order_product {
+  padding-top: 100px;
+  position: relative;
+}
+.order_product .tit {
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  margin: 10px 0;
+  width: 42%;
+  position: absolute;
+  top: 180px;
+  right: 200px;
+}
+.products {
+  position: relative;
+  padding-top: 50px;
+}
+.products .p_info1 {
+  /* margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: nowrap; */
+  /* width: 85%;
+  text-align: center;
+  position: relative;
+  top: -85px;
+  left: 0;  */
+}
+.products a img {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #707070;
+  border-radius: 10px;
+}
+.products .pro1 .name1 {
+  position: absolute;
+  top: 13%;
+  left: 10%;
+}
+.products .pro1 .color1 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.products .pro1 .count1 {
+  position: absolute;
+  top: 18%;
+  left: 43%;
+}
+.products .pro1 .cost1 {
+  position: absolute;
+  top: 18%;
+  left: 58%;
+}
+.products .pro1 .ship1 {
+  position: absolute;
+  top: 18%;
+  right: 13%;
+}
+.products .btn_del {
+}
+.products button {
+  background-image: url('../아이콘/Icon\ material-close.png');
+  background-color: transparent;
+  background-repeat: no-repeat;
+
+  width: 21px;
+  height: 21px;
+  text-indent: -9999px;
+
+  position: relative;
+  top: 0;
+  right: -100px;
+}
+.products .pro2 {
+  margin-top: 50px;
+}
+.products .pro2 div {
+  margin-top: 50px;
+}
+.products .pro2 .name2 {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+.products .pro2 .color2 {
+  position: absolute;
+  top: 57%;
+  left: 10%;
+}
+.products .pro2 .count2 {
+  position: absolute;
+  top: 55%;
+  left: 43%;
+}
+.products .pro2 .cost2 {
+  position: absolute;
+  top: 55%;
+  left: 57%;
+}
+.products .pro2 .ship2 {
+  position: absolute;
+  top: 55%;
+  right: 13%;
+}
+.products .pro2 .btn_del2 {
+}
+.products .sum {
+  width: 23%;
+}
+.products .count2 {
+  width: 25%;
+}
+.products .cost2 {
+  width: 20%;
+}
+.line {
+  position: relative;
+  width: 100%;
+  border: 3px solid rgba(112, 112, 112, 0.3);
+}
+.products input {
+  width: 30px;
+  height: 120px;
+}
+.products .pro1 div {
+  margin-left: 30px;
+}
+.products .pro2 div {
+  margin-left: 30px;
+  margin-top: -14px;
+}
+.summary {
+  margin: 50px 0;
+  border: 1px solid #707070;
+  /* display: flex; */
+  width: 100%;
+  height: 180px;
+  text-align: center;
+  /* justify-content: right; */
+  align-items: center;
+  font-weight: bold;
+  position: relative;
+}
+.summary > div {
+  position: absolute;
+  padding: 20px 0;
+}
+.sum {
+  top: 0;
+  left: 800px;
+}
+.count2 {
+  top: 80px;
+  left: 790px;
+}
+.p_sum {
+  top: 0;
+  left: 1159px;
+}
+.cost2 {
+  top: 80px;
+  left: 1040px;
+}
+.btn_order {
+  position: relative;
+  top: 0;
+  left: 640px;
+  font-size: 0;
+}
+.btn_order button {
+  border: 1px solid #000;
+  font-size: 40px;
+  width: 381px;
+  height: 88px;
+  color: #000;
+  background-color: #fff;
+  margin-bottom: 265px;
+}
+.btn_choice {
+}
+.btn_all {
+}

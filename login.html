@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>"HOMEGROUND"</title>
+    <link rel="stylesheet" href="css/homeground_reset.css" />
+    <link rel="stylesheet" href="css/homeground_comm.css" />
+    <link rel="stylesheet" href="css/homeground_login.css" />
+    <script src="https://kit.fontawesome.com/3c5fac3aca.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/homegroundjs.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+
+    </script>
+  </head>
+  <body>
+    <header id="head">
+      <div class="wrap">
+        <h1 class="logo">
+          <a href="index.html"><img src="img/N_HOMEGROUND_GRAY2.png" alt="HOMEGROUND" /></a>
+        </h1>
+        <ul class="icon">
+          <li>
+            <a href="#"><img src="img/search.png" alt="검색" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/basket.png" alt="장바구니" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/user.png" alt="로그인" /></a>
+          </li>
+        </ul>
+        <form action="#" class="i_search">
+          <label for="search" class="hide">검색</label>
+          <input type="text" name="search" id="search" />
+          <button>검색</button>
+        </form>
+        <div class="navbox">
+          <nav>
+            <ul class="main">
+              <li>
+                <a href="allview.html">침실가구</a>
+                <ul class="sub">
+                  <li><a href="detailView.html">침대</a></li>
+                  <li><a href="detailView.html">토퍼</a></li>
+                  <li><a href="detailView.html">매트리스</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="allview.html">수납가구</a>
+                <ul class="sub">
+                  <li><a href="detailView.html">드레스룸</a></li>
+                  <li><a href="detailView.html">붙박이장</a></li>
+                  <li><a href="detailView.html">싱글장</a></li>
+                  <li><a href="detailView.html">서랍장</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="allview.html">거실가구</a>
+                <ul class="sub">
+                  <li><a href="detailView.html">소파</a></li>
+                  <li><a href="detailView.html">거실장</a></li>
+                  <li><a href="detailView.html">거실테이블</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="allview.html">주방가구</a>
+                <ul class="sub">
+                  <li><a href="detailView.html">식탁</a></li>
+                  <li><a href="detailView.html">식탁의자</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="allview.html">서재가구</a>
+                <ul class="sub">
+                  <li><a href="detailView.html">의자</a></li>
+                  <li><a href="detailView.html">책상</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="allview.html">이벤트</a>
+                <ul class="sub">
+                  <li><a href="detailView.html">진행중인 이벤트</a></li>
+                  <li><a href="detailView.html">당첨자 발표</a></li>
+                </ul>
+              </li>
+              <li><a href="allview.html">매거진</a></li>
+
+              <li><a href="allview.html">쇼룸</a></li>
+              <li class="a main9"><a href="#">3D 인테리어</a></li>
+              <li class="a main10">
+                <a href="#">마이쇼핑</a>
+                <ul class="sub">
+                  <li><a href="#">회원가입</a></li>
+                  <li><a href="#">주문조회</a></li>
+                  <li><a href="#">회원정보</a></li>
+                  <li><a href="cart.html">장바구니</a></li>
+                  <li><a href="login.html">로그인</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section>
+      <h2>LOGIN</h2>
+      <div class="loginbox">
+          <button type="button" class="member act">회원</button>
+          <button type="button" class="nonmember">비회원</button>
+        <div class="h_member">
+            <form action="#">
+            <label for="u_id" class="hide">아이디</label>
+            <input type="text" id="u_id" name="u_id" placeholder="아이디" />
+            <label for="u_pw" class="hide">비밀번호</label>
+            <input type="password" id="u_pw" name="u_pw" placeholder="비밀번호" />
+            <div class="rememberbox">
+              <input type="checkbox" id="u_remember" />
+              <label for="u_remember">아이디저장</label>
+            </div>
+            <button type="submit">로그인</button>
+          </form>
+        </div>
+
+        <div class="h_nonmember">
+          <form action="#">
+            <!-- <button type="button" class="member act">회원</button>
+            <button type="button" class="nonmember">비회원</button> -->
+            <label for="u_id2" class="hide">주문자명</label>
+            <input type="text" id="u_id2" name="u_id2" placeholder="주문자명" />
+            <label for="u_pw2" class="hide">휴대폰 번호</label>
+            <input type="password" id="u_pw2" name="u_pw2" placeholder="휴대폰 번호" />
+            <button type="submit" class="orderview">주문조회</button>
+          </form>
+        </div>
+      </div>
+      <ul class="u_menu">
+        <li class="find_id"><a href="#">아이디 찾기 </a>|</li>
+        <li class="find_pw"><a href="#">비밀번호 찾기 </a>|</li>
+        <li class="join"><a href="#">회원가입 </a>|</li>
+      </ul>
+    </section>
+    <footer id="main_f">
+      <div class="wrap">
+        <h4>
+          <a href="index.html"><img src="img/N_HOMEGROUND_GRAY.png" alt="HOMEGROUND" /></a>
+        </h4>
+        <p class="info">
+          주식회사 HOMEGROUND 서울특별시 서초구 서초대로 000 대표 : 김지현 사업자등록번호: 123-45-67890 사업자 번호 조회 <br />통신판매업신고번호: 2020-서울서초-0000호 개인정보관리자 :김지현 대표번호:
+          02 - 000 - 0000 팩스번호: 02- 000 - 0000 <br />메일:email@email.co.kr 호스팅제공: 카페24(주) copyleft (c) www.homeground.co.kr all lefts reserved.
+        </p>
+        <ul class="sns">
+          <li>
+            <a href="#"><img src="img/insta.png" alt="인스타그램" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/youtube.png" alt="유튜브" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/facebook.png" alt="페이스북" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/kakao.png" alt="카카오톡" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    font-family: "맑은 고딕", sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+li{
+    list-style: none;
+}
+.wrap{
+    width: 1200px;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+
+#a{
+    height: 100px;
+    background-color: #eee;
+}
+
+#a h1{
+    float: left;
+    padding-top: 30px;
+}
+#a nav{
+    float: right;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+.main > li{
+    float: left;
+    position: relative;
+    
+}
+
+.main li a{
+    display: block;
+    width: 100px;
+    padding: 5px;
+}
+
+.main li:hover > a{
+    background-color: rgb(202, 255, 202);
+}
+.sub{
+    position: absolute;
+    top: 31px;
+    left: 0;
+    background-color: rgb(152, 245, 212);
+    display: none;
+    z-index: 10;
+}
+.sub li:hover >a{
+    background-color: white;
+}
+#b{
+    height: 300px;
+    overflow: hidden;
+}
+.slide{
+    width: 3600px;
+}
+.slide li{
+    float: left;
+    position: relative;
+    left: 0px; /* jq가 3초마다 -1200, -2400 0 으로 바꿀것 */
+}
+#c{
+    height: 200px;}
+.c1{
+    float: left;
+    width: 400px;
+    position: relative;
+}
+.c1 h2{
+    font-size: 16px;
+    /* display: inline-block; */
+    padding: 10px;
+    float: left;
+    border: 1px solid black;
+}
+.c1 h2.act{
+    background-color: #eee;
+    border-bottom: 1px solid white;
+    /* 처음엔 공지사항에 act가 있지만 갤러리를 클릭하면
+    갤러리에 act 추가 되도록. */
+}
+.c1 ul{
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.gong li a span{
+    width: 310px;
+    display: inline-block;
+}
+.gong>li:hover{
+    background-color: #eee;
+}
+.gall{
+    width: 400px;
+    display: none;
+}
+.gall li{
+    display: inline-block;
+    padding: 10px;
+}
+.c2{
+    float: left;
+}
+.c3{
+    float: left;
+
+}
+#d{
+    height: 100px;
+    background-color: #eee;
+    position: relative;
+}
+#d h3{
+    float: left;
+    padding-top: 30px;
+}
+#d .d1{
+    text-align: center;
+    padding-top: 25px;
+}
+.fmenu li{
+    display: inline-block;
+    padding: 5px;
+
+}
+
+#modal{
+    display: none;
+    width:100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.box{
+    background-color: #fff;
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    margin:200px auto;
+}
+.box h4{
+    padding: 10px;
+    background-color: blue;
+    color: #fff;
+}
+.box p{
+    padding: 10px;
+}
+.box button{
+    float: right;
+    margin-right: 30px;
+    padding: 5px;
+}

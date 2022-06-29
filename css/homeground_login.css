@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+section {
+  width: 700px;
+  margin: auto;
+  text-align: center;
+  padding: 120px 0;
+}
+section h2 {
+  font-size: 50px;
+}
+section .loginbox {
+  border: 1px solid #707070;
+  position: relative;
+  height: 322px;
+}
+section .loginbox button {
+  border: 0;
+  background-color: transparent;
+  font-size: 20px;
+  width: 300px;
+  height: 30px;
+  margin: 30px 0;
+  border: 1px solid #707070;
+  cursor: pointer;
+  /* padding: 0 3px; */
+}
+.loginbox button[type='button'].act {
+  background-color: #000;
+  color: #fff;
+}
+
+section .loginbox form input {
+  padding: 0 5px;
+}
+section .loginbox form input#u_id {
+  width: 600px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+section .loginbox form input#u_pw {
+  width: 600px;
+  height: 50px;
+}
+section .loginbox .rememberbox {
+  position: absolute;
+  top: 208px;
+  left: 49px;
+}
+section .loginbox button[type='submit'] {
+  background-color: #000;
+  color: #fff;
+  width: 600px;
+  height: 50px;
+}
+section .u_menu {
+  position: relative;
+}
+section .u_menu li {
+  display: inline-block;
+  position: relative;
+  padding-top: 10px;
+}
+section .h_nonmember {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+section .loginbox button.orderview {
+  background-color: #000;
+  color: #fff;
+  width: 600px;
+  height: 50px;
+  position: absolute;
+  top: 205px;
+  left: 49px;
+}
+section .u_menu li.find_id {
+}
+section .u_menu li.find_pw {
+}
+section .u_menu li.join {
+}

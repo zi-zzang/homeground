@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+#evt {
+  height: 600px;
+  position: relative;
+  top: 30px;
+  left: 0;
+  overflow: hidden;
+}
+.slider {
+  width: 4320px;
+}
+.slider li {
+  float: left;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.slider li a img {
+  width: 1440px;
+  height: 600px;
+}
+#evt .slick-dots {
+  bottom: 15px;
+  left: 670px;
+}
+#evt button {
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+}
+#evt button.prev {
+  left: 3%;
+}
+#evt button.next {
+  right: 3%;
+}
+button.prev,
+button.next {
+  font-size: 73px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0;
+  color: #fff;
+}
+section {
+  padding-bottom: 50px;
+}
+section#item {
+  font-size: 20px;
+  color: #707070;
+  /* width: 100%; */
+}
+section h3 {
+  font-size: 50px;
+  font-weight: 400;
+  padding: 36px 0;
+}
+section .item1 {
+  position: relative;
+  top: 50px;
+}
+section .item1 .hotdeal {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+section .item1 .hotdeal li a img {
+  width: 238px;
+  height: 290px;
+  border: 1px solid #e8dfdf;
+  background-color: #fff;
+  border-radius: 10px;
+}
+section .item2 {
+  position: relative;
+  top: 50px;
+}
+.item2 ul li {
+  display: inline-block;
+}
+section .item2 .popular {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 36px;
+  justify-content: space-between;
+  text-align: center;
+}
+section .item2 .popular li {
+  display: block;
+  flex: 1 1 20%;
+  /* padding-bottom: 20px; */
+}
+.info ul.color li {
+  display: inline-block;
+  padding-right: 10px;
+  padding-bottom: 36px;
+}
+section .item2 .popular li.image a img {
+  width: 216px;
+  height: 265px;
+  border: 1px solid #e8dfdf;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.btn_dark {
+  background-color: transparent;
+  border: 2px solid #707070;
+  color: #707070;
+  padding: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 120px;
+  font-weight: bold;
+}

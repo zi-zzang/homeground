@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"HOMEGROUND"</title>
+    <link rel="stylesheet" href="css/homeground_reset.css">
+    <link rel="stylesheet" href="css/homeground_comm.css">
+    <link rel="stylesheet" href="css/order.css">
+    <script src="https://kit.fontawesome.com/3c5fac3aca.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/homegroundjs.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+</head>
+<body>
+    <header id="head">
+        <div class="wrap">
+            <h1 class="logo"><a href="index.html"><img src="img/N_HOMEGROUND_GRAY2.png" alt="HOMEGROUND"></a></h1>
+            <ul class="icon">
+                <li><a href="#"><img src="img/search.png" alt="검색"></a></li>
+                <li><a href="#"><img src="img/basket.png" alt="장바구니"></a></li>
+                <li><a href="#"><img src="img/user.png" alt="로그인"></a></li>
+            </ul>
+            <form action="#" class="i_search">
+                <label for="search" class="hide">검색</label>
+                <input type="text" name="search" id="search">
+                <button>검색</button>
+            </form>
+            <div class="navbox">
+                <nav>
+                    <ul class="main">
+                        <li><a href="allview.html">침실가구</a>
+                            <ul class="sub">
+                                <li><a href="detailView.html">침대</a></li>
+                                <li><a href="detailView.html">토퍼</a></li>
+                                <li><a href="detailView.html">매트리스</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="allview.html">수납가구</a>
+                            <ul class="sub">
+                                <li><a href="detailView.html">드레스룸</a></li>
+                                <li><a href="detailView.html">붙박이장</a></li>
+                                <li><a href="detailView.html">싱글장</a></li>
+                                <li><a href="detailView.html">서랍장</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="allview.html">거실가구</a>
+                            <ul class="sub">
+                                <li><a href="detailView.html">소파</a></li>
+                                <li><a href="detailView.html">거실장</a></li>
+                                <li><a href="detailView.html">거실테이블</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="allview.html">주방가구</a>
+                            <ul class="sub">
+                                <li><a href="detailView.html">식탁</a></li>
+                                <li><a href="detailView.html">식탁의자</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="allview.html">서재가구</a>
+                            <ul class="sub">
+                                <li><a href="detailView.html">의자</a></li>
+                                <li><a href="detailView.html">책상</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="allview.html">이벤트</a>
+                            <ul class="sub">
+                                <li><a href="detailView.html">진행중인 이벤트</a></li>
+                                <li><a href="detailView.html">당첨자 발표</a></li>
+                            </ul>
+                        </li>
+                            <li><a href="allview.html">매거진</a></li>
+                        
+                            <li><a href="allview.html">쇼룸</a></li>
+                        <li class="a main9"><a href="#">3D 인테리어</a></li>
+                        <li class="a main10"><a href="#">마이쇼핑</a>
+                            <ul class="sub">
+                                <li><a href="#">회원가입</a></li>
+                                <li><a href="#">주문조회</a></li>
+                                <li><a href="#">회원정보</a></li>
+                                <li><a href="cart.html">장바구니</a></li>
+                                <li><a href="login.html">로그인</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section>
+       <div class="order_info">
+        <h2>주문자 정보</h2>
+        <form action="#">
+            <div class="o_name">
+                <label for="o_name">주문자명</label>
+                <input type="text" name="o_name" id="o_name">
+            </div>
+            <div class="o_phone">
+                <label for="phone_select">휴대폰 번호</label>
+                <select name="phone_select" id="phone_select">
+                    <option value="#">010</option>
+                    <option value="#">011</option>
+                    <option value="#">018</option>
+                    <option value="#">019</option>
+                    <option value="#">011</option>
+                </select>
+                <label for="phone_mid" class="hide">중간</label>
+                <input type="text" name="phone_mid" id="phone_mid">
+                <label for="phone_last" class="hide">마지막</label>
+                <input type="text" name="phone_last" id="phone_last">
+            </div>
+            <div class="o_email">
+                <label for="o_email">이메일</label>
+                <input type="email" name="o_email" id="o_email"><span>@</span>
+                <label for="s_email" class="hide">이메일</label>
+                <select name="s_email" id="s_email">
+                    <option value="daum">daum.com</option>
+                    <option value="gmail">gmail.com</option>
+                    <option value="kakao">kakao.com</option>
+                    <option value="nate">nate.com</option>
+                    <option value="naver">naver.com</option>
+                </select>
+            </div>
+        </form>
+       </div>
+       <div class="order_place">
+        <h2>배송지 정보</h2>
+        <form action="#">
+            <div class="p_name">
+                <label for="p_name">이름</label>
+                <input type="text" name="p_name" id="p_name">
+            </div>
+            <div class="p_phone">
+                <label for="phone_select2">휴대폰 번호</label>
+                <select name="phone_select2" id="phone_select2">
+                    <option value="#">010</option>
+                    <option value="#">011</option>
+                    <option value="#">018</option>
+                    <option value="#">019</option>
+                    <option value="#">011</option>
+                </select>
+                <label for="phone_mid2" class="hide">중간</label>
+                <input type="text" name="phone_mid2" id="phone_mid2">
+                <label for="phone_last2" class="hide">마지막</label>
+                <input type="text" name="phone_last2" id="phone_last2">
+            </div>
+            <div class="p_zip">
+            <label for="o_zip">우편번호</label>
+                <input type="text" name="o_zip" id="o_zip">
+                <button type="button" onclick="openZipSearch()">우편번호</button><br>
+                <label for="o_add1">주소</label>
+                <input type="text" name="o_add1" id="o_add1" readonly /><br>
+                <label for="o_add2">상세주소</label>
+                <input type="text" name="o_add2" id="o_add2" placeholder="상세주소를 입력 해 주세요." />
+            </div>
+            <div class="p_memo">
+                <label for="memo">배송메모</label>
+                <input type="text" id="memo">
+            </div>
+        </form>
+       </div>
+       <div class="order_product">
+            <h2>배송 상품</h2>
+            <div class="tit">
+                <div class="count">수량</div>
+                <div class="cost">금액</div>
+                <div class="ship">배송비</div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="pro1">
+                <a href="#">
+                    <img src="img/gray_desk.png" alt="motion desk">
+                </a>
+                <div class="name1">Motion Desk</div>
+                <div class="color1">Gray</div>
+                <div class="count1">1</div>
+                <div class="cost1">850,000원</div>       
+                <div class="ship1">무료</div>       
+            </div>
+                <div class="pro2">
+                    <a href="#">
+                        <img src="img/velvet_sofa.png" alt="motion desk">
+                    </a>
+                    <div class="name2">Black Velvet Sofa</div>
+                    <div class="color2">One Color</div>
+                    <div class="count2">1</div>
+                    <div class="cost2">1,500,000원</div>       
+                    <div class="ship2">무료</div>       
+                </div>
+            <div class="summary">
+                <div class="sum">총 합계</div>
+                <div class="count2">2</div>
+                <div class="cost2">2,350,000원</div>
+            </div>
+       </div>
+
+       <div class="section2">
+           <h3>할인 정보</h3>
+        <div class="discount_info">
+                <div class="discount_select">
+                        <h4>할인 선택</h4>
+                    <div class="p_discount">
+                        <label for="dis">상품 할인</label>
+                        <input type="text" name="dis" id="dis">
+                    </div>
+                    <div class="p_coupon">
+                        <label for="coupon">장바구니 쿠폰</label>
+                        <input type="text" name="coupon" id="coupon">
+                    </div>
+                    <div class="discount_btn">
+                        <button>할인 적용</button>
+                    </div>
+                </div>
+                <div class="line"></div>
+
+                <div class="point">
+                    <h4>포인트</h4>
+                    <label for="point" class="hide">포인트</label>
+                    <input type="text" id="point">
+                    <button>전액 사용하기</button>
+                </div>
+                <div class="line"></div>
+
+            </div>
+        </div>
+       <div class="pay_method">
+            <h3>결제수단</h3>
+            <div class="method">
+            <h4>일반 결제</h4> 
+            <div class="credit">
+                    <input type="radio" name="method" id="credit" checked>
+                    <label for="credit">신용카드</label>
+                </div>
+            <div class="account">
+                    <input type="radio" name="method" id="account">
+                    <label for="account">계좌이체</label>
+            </div>
+            <div class="atm">
+                    <input type="radio" name="method" id="atm">
+                    <label for="atm">무통장 입금</label>
+            </div>
+        </div>
+       </div>
+       <div class="sum1">
+            <h3>최종 결제 금액</h3>
+            <span>2,350,000원</span>
+       </div>
+       <div class="charge">
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">(필수) 구매하실 상품의 결제정보를 확인하였으며, 구매진행에 동의합니다.</label>
+            <button type="submit">결제하기</button>
+       </div>
+    </section>
+
+    <footer id="main_f">
+            <div class="wrap">
+                <h4><a href="index.html"><img src="img/N_HOMEGROUND_GRAY.png" alt="HOMEGROUND"></a></h4>
+                <p class="info">주식회사 HOMEGROUND 서울특별시 서초구 서초대로 000
+                대표 : 김지현 사업자등록번호: 123-45-67890 사업자 번호 조회 <br>통신판매업신고번호: 2020-서울서초-0000호 개인정보관리자 :김지현
+                    대표번호: 02 - 000 - 0000 팩스번호: 02- 000 - 0000 <br>메일:email@email.co.kr 호스팅제공: 카페24(주)
+                    copyleft (c) www.homeground.co.kr all lefts reserved.
+                </p>
+                <ul class="sns">
+                    <li><a href="#"><img src="img/insta.png" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="img/youtube.png" alt="유튜브"></a></li>
+                    <li><a href="#"><img src="img/facebook.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="img/kakao.png" alt="카카오톡"></a></li>
+                </ul>
+            </div>
+     </footer>
+
+     <script>
+        function openZipSearch() {
+        new daum.Postcode({
+            oncomplete: function(data) {
+                $('[name=o_zip]').val(data.zonecode); // 우편번호 (5자리)
+                $('[name=o_add1]').val(data.address);
+                $('[name=o_add2]').val(data.buildingName);
+            }
+        }).open();
+    }
+     </script>
+</body>
+</html>

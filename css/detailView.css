@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+#evt {
+  height: 340px;
+  position: relative;
+  top: 30px;
+  left: 0;
+  overflow: hidden;
+}
+.slider {
+  width: 4320px;
+}
+.slider li {
+  float: left;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.slider li a img {
+  width: 1440px;
+  height: 340px;
+}
+#evt button {
+  position: absolute;
+  top: 35%;
+  cursor: pointer;
+}
+#evt button.prev {
+  left: 3%;
+}
+#evt button.next {
+  right: 3%;
+}
+button.prev,
+button.next {
+  font-size: 73px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0;
+  color: #fff;
+}
+#item h3 {
+  /* display: inline-block; */
+  padding-top: 30px;
+  font-size: 48px;
+  color: #707070;
+}
+.container .banner {
+  width: 912px;
+  height: 598px;
+}
+.container .product {
+  width: 219px;
+  height: 256px;
+}
+.info li {
+  color: #707070;
+  font-size: 20px;
+  font-weight: lighter;
+}
+.container {
+  /* 부모요소 */
+  display: grid;
+  column-gap: 163px;
+  row-gap: 68px;
+  grid-template-columns: 238px 238px 238px 238px;
+  grid-template-rows: 290px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.item a img {
+  border: 1px solid #e8dfdf;
+  border-radius: 10px;
+}
+.color li {
+  display: inline-block;
+}
