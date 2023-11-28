@@ -5,6 +5,7 @@ section {
   margin: auto;
   text-align: center;
   padding: 120px 0;
+  
 }
 section h2 {
   font-size: 50px;
@@ -13,12 +14,13 @@ section .loginbox {
   border: 1px solid #707070;
   position: relative;
   height: 322px;
+  margin-top:30px;
 }
 section .loginbox button {
   border: 0;
   background-color: transparent;
   font-size: 20px;
-  width: 300px;
+  width: 200px;
   height: 30px;
   margin: 30px 0;
   border: 1px solid #707070;
@@ -34,23 +36,18 @@ section .loginbox form input {
   padding: 0 5px;
 }
 section .loginbox form input#u_id {
-  width: 600px;
-  height: 50px;
   margin-bottom: 15px;
 }
-section .loginbox form input#u_pw {
-  width: 600px;
-  height: 50px;
+
+.inputbox{
+  width:400px;
+  height: 40px;
 }
-section .loginbox .rememberbox {
-  position: absolute;
-  top: 208px;
-  left: 49px;
-}
+
 section .loginbox button[type='submit'] {
   background-color: #000;
   color: #fff;
-  width: 600px;
+  width: 400px;
   height: 50px;
 }
 section .u_menu {

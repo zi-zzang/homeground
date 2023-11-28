@@ -92,6 +92,7 @@ section select {
 .order_product {
   padding-top: 100px;
   position: relative;
+  font-size: 20px;
 }
 .order_product .tit {
   font-weight: bold;
@@ -108,23 +109,15 @@ section select {
 .products {
   position: relative;
   padding-top: 50px;
+  font-size:20px;
 }
-.products .p_info1 {
-  /* margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  /* flex-wrap: nowrap; */
-  /* width: 85%;
-  text-align: center;
-  position: relative;
-  top: -85px;
-  left: 0;  */
-}
+
 .products a img {
   width: 120px;
   height: 120px;
   border: 1px solid #707070;
   border-radius: 10px;
+  margin-left:10px;
 }
 .products .pro1 .name1 {
   position: absolute;
@@ -151,8 +144,7 @@ section select {
   top: 18%;
   right: 13%;
 }
-.products .btn_del {
-}
+
 .products button {
   background-image: url('../아이콘/Icon\ material-close.png');
   background-color: transparent;
@@ -197,8 +189,7 @@ section select {
   top: 55%;
   right: 13%;
 }
-.products .pro2 .btn_del2 {
-}
+
 .products .sum {
   width: 23%;
 }
@@ -257,21 +248,21 @@ section select {
   left: 1040px;
 }
 .btn_order {
-  position: relative;
-  top: 0;
-  left: 640px;
-  font-size: 0;
+  /* position: relative; */
+  display: flex;
+  justify-content: right;
 }
 .btn_order button {
-  border: 1px solid #000;
-  font-size: 40px;
-  width: 381px;
-  height: 88px;
+  border: 1px solid #707070;
+  font-size: 25px;
+  width: 250px;
+  height: 50px;
   color: #000;
   background-color: #fff;
-  margin-bottom: 265px;
+  margin-left:10px;
 }
-.btn_choice {
-}
-.btn_all {
+
+.btn_order button:hover{
+  background-color: #707070;
+  color:white;
 }
